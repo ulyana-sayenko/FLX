@@ -1,0 +1,159 @@
+/* 
+
+write your code here
+
+*/
+
+@media print {
+  @page{
+    margin: 0;
+  }
+  .tm-sidebar,
+  #about,
+  .heading,
+  .blocks,
+  #ideas,
+  .img-contact-us,
+  #contact {
+    display: none;
+  }
+  .tm-banner{
+    border: none !important;
+  }
+  section::before{
+    display: none !important;
+  }
+  h2{
+    color: blue !important;
+  }
+  h2 + p{
+    font-style: italic;
+  }
+  p.tm-section-description{
+    text-indent: 1.5rem;
+    line-height: 1.9rem;
+  }
+  p::first-letter {
+    color: lightskyblue;
+    font-size: 30px;
+  }
+  .tm-banner{
+    width: 90%;
+  }
+  img{
+    max-width: 100%;
+    position: relative;
+  }
+}
+#about .box-bg{
+  cursor: pointer;
+}
+
+ #about .tm-section-title:nth-child(2n+1):hover {
+  background-color: lightskyblue;
+  color: white;
+}
+.tm-team-description-container {
+  max-width: 100%;
+}
+
+p::first-letter {
+  color: lightskyblue;
+  font-size: 30px;
+}
+.tm-section-description{
+  text-indent: 1.5rem;
+  line-height: 1.9rem;
+}
+section>.tm-content-box {
+  display: flex;
+  align-items: center;
+}
+
+.tm-nav-item a:hover {
+  background-color: #eee;
+}
+
+.tm-banner {
+  border: 30px solid #eee;
+  padding: 0;
+}
+
+.tm-sidebar,
+.tm-content-header,
+section {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute; 
+  border-right: 260px solid transparent;
+  border-top: 35px solid #2aabd2;
+}
+
+h2+p {
+  font-style: italic;
+}
+
+.heading ol a {
+  color: #000;
+}
+
+.heading ol a:hover {
+  color: #2aabd2;
+  text-decoration-style: double;
+}
+
+.heading li a:visited {
+  text-decoration: underline;
+}
+
+.text {
+  position: relative;
+}
+
+.heading .text::after {
+  content: "New";
+  position: absolute;
+  color: #FF0000;
+  font-size: 10px;
+}
+
+.boxes.gallery-container li:nth-child(2n) {
+  background-color: #eee;
+  padding: 13px;
+}
+
+.boxes.gallery-container li:nth-child(2n+1) {
+  padding: 13px;
+}
+
+#tmCarousel .flex-item .tm-section-title {
+  color:gainsboro;
+  letter-spacing: 5px;
+}
+
+.mandatory-field::after {
+  content: "*";
+  color: red;
+  font-weight: 600;
+}
+
+.btn {
+  width: 160px;
+  height: 60px;
+  border-color: lightskyblue;
+  background-color: white;
+  color:lightskyblue;
+  margin-left: 870px;
+}
+
+.btn:hover {
+  background-color: lightskyblue;
+  border-color: lightskyblue;
+}
