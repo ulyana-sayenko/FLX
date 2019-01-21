@@ -155,5 +155,5 @@ h2+p {
 
 .btn:hover {
   background-color: lightskyblue;
-  border-color: lightskyblue;
+  border-color: transparent;
 }
