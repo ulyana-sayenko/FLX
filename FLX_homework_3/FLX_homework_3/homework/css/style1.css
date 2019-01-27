@@ -1,0 +1,167 @@
+body {
+  margin: 0 auto;
+  background-color: white; }
+  body .main-wrapper {
+    width: 100%;
+    margin: 0; }
+    body .main-wrapper header {
+      background: url(../img/header_background_v1.jpg) no-repeat center top;
+      height: 100vh;
+      background-size: cover; }
+      body .main-wrapper header .top-wrapper {
+        justify-content: space-between;
+        display: flex; }
+        body .main-wrapper header .top-wrapper .logo img {
+          width: 235px;
+          height: 164px; }
+        body .main-wrapper header .top-wrapper nav a {
+          display: inline-block;
+          padding: 22px;
+          margin-right: 179px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+          font-size: 24px;
+          font-weight: bold;
+          color: white;
+          border-left: 2px solid #607d8b; }
+          body .main-wrapper header .top-wrapper nav a:first-child {
+            border-left: none; }
+      body .main-wrapper header section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body .main-wrapper header section h1 {
+          margin-top: 290px;
+          font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+          color: white;
+          text-transform: uppercase; }
+        body .main-wrapper header section .btn-top {
+          height: 13px;
+          width: 175px;
+          text-align: center;
+          padding: 13px;
+          font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 15px;
+          background-color: #01acac;
+          color: white; }
+    body .main-wrapper main {
+      width: 940px;
+      margin: 0 auto; }
+      body .main-wrapper main .toolbar {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 29px; }
+        body .main-wrapper main .toolbar input {
+          text-align: center;
+          width: 165px;
+          height: 31px; }
+      body .main-wrapper main section.post-list h1 {
+        margin: 6px 0 0px 0;
+        text-align: end;
+        text-transform: uppercase;
+        color: #010f16; }
+      body .main-wrapper main section.post-list article {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        padding: 11px 31px 12px 13px;
+        background-color: #efefef;
+        font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif; }
+        body .main-wrapper main section.post-list article img {
+          width: 250px;
+          height: 280px; }
+        body .main-wrapper main section.post-list article .post {
+          margin-left: 10px;
+          line-height: 1.5; }
+          body .main-wrapper main section.post-list article .post .post-description {
+            padding: 5px;
+            font-size: 15px;
+            color: #E90303;
+            border-bottom: 1px solid #607d8b; }
+          body .main-wrapper main section.post-list article .post h3 {
+            font-size: 15px;
+            color: #01acac;
+            text-transform: uppercase;
+            margin-top: 7px; }
+          body .main-wrapper main section.post-list article .post p {
+            font-size: 15px;
+            color: #010f16; }
+        body .main-wrapper main section.post-list article .btn {
+          display: flex;
+          margin-left: auto;
+          cursor: pointer;
+          justify-content: center;
+          border: none;
+          width: 205px;
+          height: 40px;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 15px;
+          background-color: #01acac;
+          color: white; }
+      body .main-wrapper main section.about div h1 {
+        text-align: right;
+        text-transform: uppercase; }
+      body .main-wrapper main section.about div p {
+        font-size: 15px;
+        line-height: 1.5; }
+      body .main-wrapper main section.about div img {
+        width: 940px; }
+      body .main-wrapper main section.contact-form h1 {
+        text-align: right;
+        text-transform: uppercase; }
+      body .main-wrapper main section.contact-form h4 {
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 15px; }
+      body .main-wrapper main section.contact-form .form .name {
+        display: inline-block;
+        width: 50%; }
+        body .main-wrapper main section.contact-form .form .name .nameForm {
+          padding-right: 10px; }
+          body .main-wrapper main section.contact-form .form .name .nameForm label {
+            color: #01acac;
+            display: block;
+            text-align: right; }
+          body .main-wrapper main section.contact-form .form .name .nameForm input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 33px; }
+      body .main-wrapper main section.contact-form .form .email {
+        display: inline-block;
+        width: 50%;
+        float: right; }
+        body .main-wrapper main section.contact-form .form .email .emailForm {
+          padding-right: 10px; }
+          body .main-wrapper main section.contact-form .form .email .emailForm label {
+            color: #01acac;
+            display: block;
+            text-align: right; }
+          body .main-wrapper main section.contact-form .form .email .emailForm input {
+            box-sizing: border-box;
+            width: 100%;
+            height: 33px; }
+      body .main-wrapper main section.contact-form .form .message label {
+        display: flex;
+        justify-content: flex-end;
+        color: #01acac; }
+      body .main-wrapper main section.contact-form .form .message textarea {
+        width: 100%;
+        height: 100px; }
+      body .main-wrapper main section.contact-form .form .send button {
+        width: 200px;
+        height: 42px;
+        border: none;
+        float: right;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        background-color: #01acac;
+        color: white; }
+  body footer {
+    margin-left: 30px;
+    padding-top: 75px;
+    color: #010f16; }

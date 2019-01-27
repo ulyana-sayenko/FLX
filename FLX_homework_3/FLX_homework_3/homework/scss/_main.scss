@@ -1,0 +1,259 @@
+// Write your styles here
+@mixin headerNav {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: $headerFont;
+  font-size: $fontBig;
+  font-weight: bold;
+  color: $headerColor;
+}
+
+@mixin headerButton {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $fontSmall;
+  background-color: $buttonColor;
+  color: $headerColor;
+}
+
+body {
+  margin: 0 auto;
+  background-color: $backgroundColor;
+
+  .main-wrapper {
+    width: 100%;
+    margin: 0;
+
+    header {
+      background: $headerBackground no-repeat center top;
+      height: 100vh;
+      background-size: cover;
+
+      .top-wrapper {
+        justify-content: space-between;
+        display: flex;
+
+        .logo {
+          img {
+            width: 235px;
+            height: 164px;
+          }
+        }
+
+        nav {
+          a {
+            display: inline-block;
+            padding: 22px;
+            margin-right: 179px;
+            @include headerNav;
+            border-left: 2px solid $frameColor;
+
+            &:first-child {
+              border-left: none;
+            }
+          }
+        }
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+          margin-top: 290px;
+          font-family: $headerFont;
+          color: $headerColor;
+          text-transform: uppercase;
+        }
+
+        .btn-top {
+          height: 13px;
+          width: 175px;
+          text-align: center;
+          padding: 13px;
+          font-family: $headerFont;
+          @include headerButton;
+        }
+      }
+    }
+
+    main {
+      width: 940px;
+      margin: 0 auto;
+
+      .toolbar {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-top: 29px;
+
+        input {
+          text-align: center;
+          width: 165px;
+          height: 31px;
+        }
+      }
+
+      section.post-list {
+        h1 {
+          margin: 6px 0 0px 0;
+          text-align: end;
+          text-transform: uppercase;
+          color: $contentColor;
+        }
+
+        article {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 15px;
+          padding: 11px 31px 12px 13px;
+          background-color: $articleColor;
+          font-family: $headerFont;
+
+          img {
+            width: 250px;
+            height: 280px;
+          }
+
+          .post {
+            margin-left: 10px;
+            line-height: 1.5;
+
+            .post-description {
+              padding: 5px;
+              font-size: $fontSmall;
+              color: $articleTitle;
+              border-bottom: 1px solid $frameColor;
+            }
+
+            h3 {
+              font-size: $fontSmall;
+              color: $buttonColor;
+              text-transform: uppercase;
+              margin-top: 7px;
+            }
+
+            p {
+              font-size: $fontSmall;
+              color: $contentColor;
+            }
+          }
+
+          .btn {
+            display: flex;
+            margin-left: auto;
+            cursor: pointer;
+            justify-content: center;
+            border: none;
+            width: 205px;
+            height: 40px;
+            @include headerButton;
+          }
+        }
+      }
+
+      section.about {
+        div {
+          h1 {
+            text-align: right;
+            text-transform: uppercase;
+          }
+
+          p {
+            font-size: $fontSmall;
+            line-height: 1.5;
+          }
+
+          img {
+            width: 940px;
+          }
+        }
+      }
+
+      section.contact-form {
+        h1 {
+          text-align: right;
+          text-transform: uppercase;
+        }
+
+        h4 {
+          text-align: right;
+          text-transform: uppercase;
+          font-size: $fontSmall;
+        }
+
+        .form {
+          .name {
+            display: inline-block;
+            width: 50%;
+
+            .nameForm {
+              padding-right: 10px;
+
+              label {
+                color: #01acac;
+                display: block;
+                text-align: right;
+              }
+
+              input {
+                box-sizing: border-box;
+                width: 100%;
+                height: 33px;
+              }
+            }
+          }
+
+          .email {
+            display: inline-block;
+            width: 50%;
+            float: right;
+
+            .emailForm {
+              padding-right: 10px;
+
+              label {
+                color: #01acac;
+                display: block;
+                text-align: right;
+              }
+
+              input {
+                box-sizing: border-box;
+                width: 100%;
+                height: 33px;
+              }
+            }
+          }
+
+          .message {
+            label {
+              display: flex;
+              justify-content: flex-end;
+              color: #01acac;
+            }
+
+            textarea {
+              width: 100%;
+              height: 100px;
+            }
+          }
+
+          .send button {
+            width: 200px;
+            height: 42px;
+            border: none;
+            float: right;
+            @include headerButton;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    margin-left: 30px;
+    padding-top: 75px;
+    color: $contentColor;
+  }
+}
