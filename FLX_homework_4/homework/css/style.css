@@ -1,0 +1,290 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/sample2.jpg) no-repeat center center/cover;
+}
+
+.header-logo {
+  margin-left: 35px;
+  margin-top: 25px;
+
+  display: inline-block;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 15px;
+
+
+}
+
+nav {
+  display: inline-block;
+  float: right;
+  padding-top: 1rem;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 20px 20px;
+  font-size: 15px;
+}
+
+.heder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-text {
+  text-align: center;
+  padding: 121px 0px 72px 15px;
+  color: #FFFFFF;
+}
+
+.title-header {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.title-header span {
+  font-size: 85px;
+}
+
+.title-text {
+  font-size: 15px;
+
+  margin-bottom: 65px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  width: 144px;
+  height: 33px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.content-text {
+  display: flex;
+  justify-content: flex-end;
+  color: #FFFFFF;
+}
+
+.content-text div {
+  align-items: flex-end;
+  max-width: 994px;
+  font-size: 10px;
+  margin-right: 31px;
+  padding-top: 70px;
+}
+
+main {
+  position: relative;
+  background-color: #f3f3f3;
+}
+
+main::after {
+  content: '';
+  position: absolute;
+  top: -16px;
+  border-bottom: 130px solid #f3f3f3;
+  border-right: 99.1vw solid #000;
+
+}
+
+
+img {
+  width: 100%;
+  height: 235px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 96%;
+  padding-top: 95px;
+}
+
+.wrapper .wrapper-title p{
+  width: 40%;
+}
+
+.wrapper .title{
+  text-align: center;
+}
+.main-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+.main-about>div{
+  flex: 0 1 50%;
+}
+
+.main-text p {
+  font-size: 14px;
+  padding-bottom: 45px
+}
+.button-like{
+  position: relative;
+}
+.button-img{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.text-img p{
+  position: absolute;
+    top: 85%;
+    left: 7px;
+    color: white;
+    font-size: 8px;
+
+}
+.btn{
+  border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.about-right {
+  text-align: center;
+}
+
+.about-right p {
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+
+.block-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 14px;
+  padding: 25px;
+
+}
+
+.card {
+  max-width: 312px;
+  padding: 15px;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.84);
+    min-height: 120px;
+}
+
+.btn-card {
+  color: #FFFFFF;
+  background-color: #097774;
+  border: none;
+  width: 100%;
+  height: 35px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.subscribe {
+  background-color: #f3f3f3;
+}
+
+.subscribe-text {
+  padding: 30px 0px 10px 15px;
+  font-size: 12px;
+}
+
+.subscribe-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subscribe-block p {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.subscribe-block input {
+  background-color: #f3f3f3;
+  border-color: #000000;
+  width: 130px;
+  height: 31px;
+  text-align: center;
+}
+
+.btn-subscribe {
+  background-color: #097774;
+  width: 129px;
+  height: 37px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+.info-block {
+  display: inline-block;
+  margin: 45px 3px 41px 29px;
+  
+}
+.info-block input{
+  background-color: #f3f3f3;
+  border-color: #000000;
+  width: 130px;
+  height: 31px;
+  text-align: center;
+}
+.block-text{
+  display: flex;
+  flex-direction: column;
+  width: 273px;
+}
+.info-text{
+  font-size: 10px;
+  color: #E8E8E8;
+}
+span{
+  color: #F0F0F0;
+  font-size: 15px;
+}
+.e-mail{
+  display: flex;
+    justify-content: space-between;
+}
+.btn-info{
+  background-color: #097774;
+  width: 129px;
+  height: 37px;
+  border: none;
+  color: white;
+}
+footer{
+  border-top: 2px solid #F0F0F0;
+}
+footer span{
+  display: inline-block;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 13px;
+}
+.footer-nav{
+  display: inline-block;
+}
+.footer-nav a{
+  text-decoration: none;
+  margin-left: 40px;
+    color: black;
+}
